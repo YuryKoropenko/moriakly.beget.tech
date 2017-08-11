@@ -1,0 +1,11 @@
+
+; /* Start:"a:4:{s:4:"full";s:121:"/bitrix/templates/autocity_default/components/bitrix/catalog/cars/bitrix/catalog.element/.default/script.js?1498465900202";s:6:"source";s:107:"/bitrix/templates/autocity_default/components/bitrix/catalog/cars/bitrix/catalog.element/.default/script.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
+$(document).ready(function() {
+  $('.js-cars-gallery__item').on('click', function(event) {
+    event.preventDefault();
+    $('.js-cars-gallery__main').html($(this).find('img').clone());
+  });
+});
+
+/* End */
+;; /* /bitrix/templates/autocity_default/components/bitrix/catalog/cars/bitrix/catalog.element/.default/script.js?1498465900202*/

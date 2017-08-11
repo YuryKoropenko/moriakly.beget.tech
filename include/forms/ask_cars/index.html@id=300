@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Покупка товара | Autocity - сайт автосервиса</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.redsign.ru" />
+<style type="text/css">.bx-composite-btn {background: url(../../../bitrix/images/main/composite/sprite-1x.png) no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url(../../../bitrix/images/main/composite/sprite-2x.png);background-size: 42px 124px;}}.bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}.bx-btn-white {background-position: right 0;color: #fff !important;}.bx-btn-black {background-position: right -31px;color: #000 !important;}.bx-btn-red {background-position: right -62px;color: #555 !important;}.bx-btn-grey {background-position: right -93px;color: #657b89 !important;}.bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}.bx-composite-loading {display: block;width: 40px;height: 40px;background: url(../../../bitrix/images/main/composite/loading.gif);}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'Быстро с 1С-Битрикс','bgcolor':'#E94524','style':'white'},'storageBlocks':[],'dynamicBlocks':{'IgWGop':{'hash':'b37701c3fb104453bcdcdeecec3b4249'},'mmL5iT':{'hash':'d61e21dd52986788c6d9d33bb388a475'},'bHcqHw':{'hash':'b1ea2ceafa25d05d56414d324b66d389'},'CkmczY':{'hash':'73192c08e593d09fc39b8f2ee0db320b'},'6f6OIq':{'hash':'dd799c924965a4b0818ead6f321ac822'},'SML3iO':{'hash':'bcfd0d13786a73027ba033a06272bc4b'}},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'120'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="../../../bitrix/cache/css/s1/autocity_default/kernel_main/kernel_main.css@149872306144417" type="text/css"  rel="stylesheet" />
+<link href="../../../bitrix/cache/css/s1/autocity_default/template_50df148417ba541f3ff252a4dd50afbd/template_50df148417ba541f3ff252a4dd50afbd.css@1498723316346645" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="../../../bitrix/cache/js/s1/autocity_default/kernel_main/kernel_main.js@1498723062278939"></script>
+<script type="text/javascript" src="../../../bitrix/js/main/core/core_db.min.js@14744622875048"></script>
+<script type="text/javascript" src="../../../bitrix/js/main/core/core_frame_cache.min.js@147446228711191"></script>
+<script type="text/javascript" src="../../../bitrix/cache/js/s1/autocity_default/kernel_redsign.devfunc/kernel_redsign.devfunc.js@14987230621981"></script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js?147446228773480','/bitrix/js/main/core/core_ajax.js?147446228721031','/bitrix/js/main/json/json2.min.js?14744622873467','/bitrix/js/main/core/core_ls.js?14744622877365','/bitrix/js/main/core/core_fx.js?14744622879592','/bitrix/js/main/session.js?14744622872511','/bitrix/js/main/core/core_window.js?147446228774754','/bitrix/js/main/core/core_popup.js?147446228729812','/bitrix/js/main/core/core_date.js?147446228734241','/bitrix/js/main/utils.js?147446228719858','/bitrix/js/redsign.devfunc/script.js?14744624361726','/bitrix/templates/autocity_default/assets/lib/jquery/jquery-1.11.2.min.js?149846590195931','/bitrix/templates/autocity_default/assets/lib/bootstrap/bootstrap.js?149846590135452','/bitrix/templates/autocity_default/assets/lib/owlcarousel2/owl.carousel.min.js?149846590142860','/bitrix/templates/autocity_default/assets/lib/fancybox/jquery.fancybox.pack.js?149846590123135','/bitrix/templates/autocity_default/assets/js/script.js?149846590116089','/bitrix/components/rsautocity/widget.settings/templates/.default/script.js?14744624158504','/bitrix/components/rsautocity/widget.settings/templates/.default/colorpicker/js/colorpicker.js?147815364220139','/bitrix/components/rsautocity/widget.settings/templates/.default/php.min.js?14744624153741','/bitrix/components/rsautocity/widget.settings/templates/.default/ion.rangeSlider.min.js?147446241538981']); </script>
+<script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css?14744622872854','/bitrix/js/main/core/css/core_popup.css?147446228729699','/bitrix/js/main/core/css/core_date.css?14744622879657','/bitrix/templates/autocity_default/assets/lib/fancybox/jquery.fancybox.css?14984659014895','/bitrix/templates/autocity_default/assets/css/style.css?1498465901152860','/bitrix/templates/autocity_default/assets/css/owl.carousel.css?149846590118374','/bitrix/templates/autocity_default/assets/css/header.css?149846590110697','/bitrix/templates/autocity_default/assets/css/sidebar.css?14984659013615','/bitrix/templates/autocity_default/assets/css/footer.css?14984659012780','/bitrix/templates/autocity_default/assets/css/content.css?1498465901125843','/bitrix/components/rsautocity/widget.settings/templates/.default/style.css?148663483013664','/bitrix/components/rsautocity/widget.settings/templates/.default/ion.rangeSlider.css?14744624153501','/bitrix/components/rsautocity/widget.settings/templates/.default/colorpicker/css/colorpicker.css?14744624153181','/bitrix/templates/autocity_default/styles.css?14984659012384']); </script>
+
+			<script type="text/javascript">
+			var sitekey		= "6LesTQcUAAAAAONGiu4Ofn2hSJ-WZdDvqOOm5sGk";
+			var theme		= "light";
+			var FORMS		= new Object();
+            var IDS         = [];
+			var captchaOK	= false;
+			//if(BX){
+				var RSGC_init = function(){
+
+					var frms =	BX.findChildren(BX(document), {"tag":"FORM"}, true);
+					
+					//clear ID's
+					var divs_4_clean	= BX.findChildren(document, {"tag":"div","class":"g-recaptcha"}, true);
+					
+					[].forEach.call(divs_4_clean, function(dfc){
+						if (dfc.id.indexOf("capt_")+1 > 0){
+							BX(dfc).removeAttribute("id");
+						}	
+					});			
+					
+					//find form
+					for(var i = 0; i<= frms.length - 1; i++){
+						var inner	= frms[i].innerHTML;	
+						var find	= undefined;
+
+						//if contains keywords, then found
+						if((inner.indexOf("captcha") + 1 > 0) && (inner.indexOf("g-recaptcha") == -1) && (inner.indexOf("re-captcha") == -1)){
+							var frm_childs	= BX.findChildren(frms[i],{},true);
+							var ins_before	= false;
+							
+							//find CAPTCHA_WORD input and fill it
+							var cw_el	= BX.findChild(frms[i], {"tag":"INPUT","attribute":{"name":"captcha_word"}}, true);
+							if(typeof(cw_el) != "undefined" && cw_el != null){
+								//console.log("CAPTCHA WORD"); console.log(typeof(cw_el));
+								cw_el.setAttribute("value", "EMPTY");
+							}
+							
+							//find CPATCHA image and hide it if it hasnt proper class
+							var imgs	= BX.findChildren(frms[i], {"tag":"IMG"}, true);
+							[].forEach.call(imgs, function(img){
+								if (img.src.indexOf("captcha") + 1 > 0){
+									BX.remove(BX(img));
+								}	
+							});
+							
+							//find capt elements
+							[].forEach.call(frm_childs, function(frm_child){
+								if((frm_child.nodeName != "div") && (frm_child.nodeName != "form")){
+								
+									//if contains keywords, then found
+									var fc_Name		= frm_child.getAttribute("name")?frm_child.getAttribute("name"):"";
+									var fc_Class	= typeof(frm_child.className)=="string"?frm_child.className:"";
+									if(((fc_Class.indexOf("captcha") + 1 > 0) || (fc_Name.indexOf("captcha") + 1 > 0)) && (frm_child.className.indexOf("recaptcha") == -1)){
+										BX.hide(frm_child);
+										if(!find){
+											//marking element to insert before
+											ins_before	= frm_child;
+										}
+										find	= true;
+									}	
+								}
+							});
+							
+							//insertion
+							if(!!ins_before){
+                                //--- update (b) ---
+                                var classes_to_catch    = ins_before.className;
+                                var addon_classes       = "";
+                                [].forEach.call(classes_to_catch.split(" "), function(item){
+                                    if(item.indexOf("captcha")+1 == 0){
+                                        addon_classes += " " + item;
+                                    }
+                                });
+                                var use_hided_classes = false;
+                                if(use_hided_classes){
+                                    new_class   = "g-recaptcha" + addon_classes;
+                                }else{
+                                    new_class   = "g-recaptcha";
+                                }
+                                //--- update (e) ---
+                            
+								var dt		= {"tag":"DIV","style":{"margin-top":"5px", "margin-bottom":"10px"},"props":{"className":new_class,"id":"capt_"+i.toString()}};
+								try{
+									var id			= "capt_"+i.toString();
+									var isElement	= BX.findChildren(frms[i], {"attribute":{"id":id}}, true);
+									if (!isElement.length){									
+										var parent	= BX.findParent(ins_before);										
+										var nOb		= BX.create(dt);
+										parent.insertBefore(nOb, ins_before);										
+										FORMS[Object.keys(FORMS).length] = "capt_"+i.toString();
+									}	
+								}catch(e){
+									//console.log(e);
+								};
+							}
+						}
+					};
+				};
+			//}
+			</script>
+		
+<script type='text/javascript'>
+				var verifyCallback = function(response) {
+					captchaOK	= true;
+				};
+
+				var onloadCallback = function() {
+					var keys	= Object.keys(FORMS);
+					keys.forEach(function(item, i, keys){
+                        var plholder	= document.getElementById(FORMS[i]);
+                        if (!!plholder){
+                            if (plholder.innerHTML == '' && typeof(grecaptcha) != 'undefined' ){
+                                var RecaptchaOptions = {       
+                                        lang: 'it'
+                                };
+                                IDS[IDS.length] = grecaptcha.render(FORMS[i], {
+                                  'sitekey' : sitekey,
+                                  'callback' : verifyCallback,
+                                  'theme' : theme,
+                                });
+                            }
+                        }
+					});
+				}; 
+                
+                function resizeOnAjax(){
+                    if (window.jQuery){
+                        //for pro serie (b)                       
+                        if(typeof(RSGOPRO_SetHeight) !== undefined){
+                           jQuery('div.fancybox-skin div.someform').css('max-width', '400px');
+                        }//for pro serie (e)    
+                        setTimeout(function(){
+                            jQuery(window).trigger('resize');
+                        }, 50);
+                        setTimeout(function(){
+                            jQuery(window).trigger('resize');
+                        }, 100);
+                    }  
+                }
+                
+                function RSGC_reset(){
+                    for(frm in FORMS) if (FORMS.hasOwnProperty(frm)) {
+                        grecaptcha.reset(IDS[FORMS[frm]]); 
+                    }
+                }
+				
+				function RSGC_Clear(){
+					var inputs = BX.findChildren(document, {'tag':'input'}, true);
+					[].forEach.call(inputs, function(inpt){
+						if(inpt.name == 'g-recaptcha-response'){
+							BX.remove(BX(inpt));
+						}
+					});
+				}
+				</script>
+<script type='text/javascript' defer='defer'>
+				if (window.frameCacheVars !== undefined)
+				{
+					// for composite
+					BX.addCustomEvent('onFrameDataReceived' , function(json) {
+						RSGC_init();
+						onloadCallback();
+					});
+				}
+				else
+				{
+					// for all
+					BX.ready(function() {
+						RSGC_Clear();
+						RSGC_init();
+						onloadCallback();
+					});
+				}	
+				
+                function addEvent(element, eventName, fn) {
+                    if (element.addEventListener)
+                        element.addEventListener(eventName, fn, false);
+                    else if (element.attachEvent)
+                        element.attachEvent('on' + eventName, fn);
+                }
+                
+				addEvent(document, 'DOMNodeInserted', function (event) {
+					if(typeof(event.target.getElementsByTagName) != 'undefined'){
+						var isForms	= event.target.getElementsByTagName('form');
+						if(isForms.length > 0){
+							RSGC_reset();
+							onloadCallback();
+						}
+					}
+				}, false);
+
+                //for bx ajax
+				BX.addCustomEvent('onAjaxSuccess' , function(json) {
+					setTimeout(function(){
+						RSGC_init();
+						onloadCallback();
+					}, 50);	
+				});
+					
+				//for jq ajax
+				addEvent(window, 'load', function(){
+					if (window.jQuery){
+						jQuery(document).bind('ajaxStop', function(){
+							setTimeout(function(){
+								RSGC_init();
+								onloadCallback();
+                                resizeOnAjax(); //only for PRO serie
+							}, 50);	
+						});	
+					}
+				});
+                
+				</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"></script>
+<script>var RSDevFunc_BasketEndWord_end1 = "";var RSDevFunc_BasketEndWord_end2 = "";var RSDevFunc_BasketEndWord_end3 = "";</script>
+<link href="../../../favicon.ico" rel="shortcut icon"  type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script async type="text/javascript" src="http://yastatic.net/share/share.js" charset="windows-1251"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,300italic,300italic,400italic,600italic,800italic,700" rel="stylesheet" type="text/css">
+<link href="../../../bitrix/templates/autocity_default/include/color.php" type="text/css"  data-template-style="true" rel="stylesheet" />
+
+
+
+<script type="text/javascript" src="../../../bitrix/cache/js/s1/autocity_default/template_68683c63af97d901bf51af34be81f0aa/template_68683c63af97d901bf51af34be81f0aa.js@1498723062288222"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "c046ece9b944a437c2efe05987063e82"]); _ba.push(["host", "autocity.redsign.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+</head>
+<body>
+    <div id="panel"></div>
+    <div id="svg-icons"><svg version="1.1"  xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" ><symbol id="svg-icon-message"  viewBox="0 0 92 92" ><path id="XMLID_1284_"  d="M88,6H4c-2.2,0-4,1.8-4,4v51.1C0,63.3,1.8,65,4,65h47v17c0,1.7,1.3,3.2,2.8,3.8c0.5,0.2,1,0.2,1.5,0.2
+	c1.2,0,2.3-0.5,3.1-1.4L75,65h13c2.2,0,4-1.7,4-3.9V10C92,7.8,90.2,6,88,6z M84,57H73.2c-1.2,0-2.5,0.6-3.3,1.4L59,71.1v-10
+	c0-2.2-1.4-4.1-3.6-4.1H8V14h76V57z M18.6,28c0-2.2,1.8-4,4-4h29c2.2,0,4,1.8,4,4s-1.8,4-4,4h-29C20.4,32,18.6,30.2,18.6,28z
+	 M62.5,31.1c-0.7-0.7-1.2-1.8-1.2-2.8c0-1.1,0.4-2.1,1.2-2.8c0.8-0.8,1.8-1.2,2.8-1.2c1.1,0,2.1,0.4,2.8,1.2
+	c0.7,0.7,1.2,1.8,1.2,2.8c0,1.1-0.4,2.1-1.2,2.8c-0.8,0.8-1.8,1.2-2.8,1.2C64.3,32.2,63.3,31.8,62.5,31.1z"  /></symbol><symbol id="svg-icon-location"  viewBox="0 0 92 92" ><path id="XMLID_1054_"  d="M68.4,7.9C62.7,2.8,54.7,0,46,0S29.3,2.8,23.6,7.9C16.6,14.1,13,23.4,13,35c0,25.1,28.9,54.6,30.2,55.8
+	c0.8,0.8,1.8,1.2,2.8,1.2s2.1-0.4,2.8-1.2C50.1,89.6,79,60.1,79,35C79,23.4,75.4,14.1,68.4,7.9z M46,82.1c-2.7-3-7-8-11.2-14
+	C25.8,55.3,21,43.9,21,35c0-25,19.1-27,25-27c23.2,0,25,20.7,25,27C71,52.6,53.1,74.3,46,82.1z M46,17.3c-8.8,0-15.9,7.3-15.9,16.2
+	S37.2,49.6,46,49.6c8.8,0,15.9-7.3,15.9-16.2S54.8,17.3,46,17.3z M46,42.6c-4.9,0-8.9-4.1-8.9-9.2s4-9.2,8.9-9.2
+	c4.9,0,8.9,4.1,8.9,9.2S50.9,42.6,46,42.6z"  /></symbol><symbol id="svg-icon-pencil"  viewBox="0 0 92 92" ><path id="XMLID_2170_"  d="M89.1,6.1l-3.2-3.2C84,1,81.6,0,78.9,0c0,0,0,0,0,0c-2.7,0-5.1,1-7,2.9L8.7,66.2c-0.4,0.4-0.7,0.8-0.9,1.4
+	L0.3,86.5C-0.3,88,0,89.7,1.2,90.8C1.9,91.6,3,92,4,92c0.5,0,1-0.1,1.5-0.3l19-7.4c0.5-0.2,1-0.5,1.4-0.9l63.3-63.3
+	C93,16.3,93,10,89.1,6.1z M14.8,71.7l5.6,5.6l-9.3,3.6L14.8,71.7z M83.4,14.5L28.2,69.7l-5.8-5.8L77.5,8.6C78,8.1,78.6,8,78.9,8
+	s0.9,0.1,1.4,0.6l3.2,3.2C84.2,12.5,84.2,13.7,83.4,14.5z"  /></symbol><symbol id="svg-icon-device-mobile"  viewBox="0 0 92 92" ><path id="XMLID_1419_"  d="M52.8,76c0,1.7-1.3,3-3,3h-7.7c-1.7,0-3-1.3-3-3s1.3-3,3-3h7.7C51.5,73,52.8,74.3,52.8,76z M72,7.6v76.8
+	c0,4.2-3.4,7.6-7.6,7.6H27.6c-4.2,0-7.6-3.4-7.6-7.6V7.6C20,3.4,23.4,0,27.6,0h36.8C68.6,0,72,3.4,72,7.6z M28,8v53h36V8H28z M64,84
+	V67H28v17H64z"  /></symbol></svg></div>
+    <div class="wrapper">
+        
+<header class="b-header">
+    <div class="b-header__logo">
+        <a class="b-aclogo" href="../../../index.html">
+	<div class="b-aclogo__icon">
+		<svg class="icon-svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-logo_header"></use></svg>
+	</div>
+	<div class="b-aclogo__text">
+		<div class="b-aclogo__title"><span style="color: #333;">Auto</span><span style="color: #bbc0c7;">City</span></div>
+		<div class="b-aclogo__descr">Мультибрендовый автосервис</div>
+	</div>
+</a>    </div>
+    <div class="b-header__recall">
+        <a href="../recall/index.html" class="fancyajaxwait" title="Заказать обратный звонок">
+        	<svg class="icon-svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-message"></use></svg>
+        	<span class="b-header__recall-text">Заказать обратный звонок</a>
+        </a>
+    </div>
+    <div class="b-header__contacts">
+        
+<a href="../../../contacts">
+	<svg class="icon-svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-location"></use></svg>
+</a>
+<div class="b-accontacts">
+	<div class="b-accontacts__phone">
+		<a href="tel:88000000000">8 (000) 000 00 00</a>
+	</div>
+	<div class="b-accontacts__adress">
+		г. Москва, ул. Егоркина, д.125, кор.2
+	</div>
+	<div class="b-accontacts__mail">
+		Эл.почта: 
+	</div>
+</div>
+
+    </div>
+</header>
+<div class="b-mmenu navbar-default">
+    <button type="button" class="b-mmenu__toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="full-width-menu">Меню</span>
+        <span class="icon-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </span>
+    </button>
+    <div class="container">
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav list-unstyled main-menu-nav" style="overflow: hidden;"><li class="dropdown other invisible"><a href="index.html@id=300#">...</a><ul class="dropdown-menu list-unstyled dropdown-menu-right"></ul></li><li class="dropdown lvl1 " id="element0"><a href="../../../company.1" class="dropdown-toggle" data-toggle="dropdown">Компания<span class="hidden-md hidden-lg"><i></i></span></a><ul class="dropdown-menu list-unstyled"><li class=""><a href="../../../company.1">О сервисе</a><li class="dropdown-submenu "><a href="../../../company/departaments/index.html">Отделы<span class="hidden-md hidden-lg"><i></i></span></a><ul class="dropdown-menu list-unstyled"><li class=""><a href="../../../company/departaments/diagnostic/index.html">Отдел диагностики</a><li class=""><a href="../../../company/departaments/repairs/index.html">Цех кузовного ремонта</a><li class=""><a href="../../../company/departaments/parts/index.html">Отдел запчастей</a></li></ul><li class=""><a href="../../../company/postavshchiki/index.html">Поставщики</a><li class=""><a href="../../../company/reviews/index.html">Отзывы клиентов</a><li class="dropdown-submenu "><a href="../../../company/emploeye/index.html">Сотрудники<span class="hidden-md hidden-lg"><i></i></span></a><ul class="dropdown-menu list-unstyled"><li class=""><a href="../../../company/emploeye/leadership/index.html">Руководство</a><li class=""><a href="../../../company/emploeye/parts_department/index.html">Отдел запчастей</a><li class=""><a href="../../../company/emploeye/repairs_department/index.html">Цех кузовного ремонта</a><li class=""><a href="../../../company/emploeye/service/index.html">Сервисная станция</a></li></ul><li class=""><a href="../../../company/vacancies/index.html">Вакансии</a><li class=""><a href="../../../company/fotogallery/index.html">Фотогалерея</a><li class=""><a href="../../../company/waranty/index.html">Гарантия и сервис</a><li class=""><a href="../../../company/partners/index.html">Наши партнеры</a><li class=""><a href="../../../company/marki-avtomobiley/index.html">Марки автомобилей</a></li></ul><li class="dropdown lvl1 " id="element18"><a href="../../../services/index.html" class="dropdown-toggle" data-toggle="dropdown">Услуги и сервис<span class="hidden-md hidden-lg"><i></i></span></a><ul class="dropdown-menu list-unstyled"><li class=""><a href="../../../services/shinomontazh/index.html">Шиномонтаж</a><li class=""><a href="../../../services/avtoelektrika/index.html">Автоэлектрика</a><li class=""><a href="../../../services/diagnostika-avtomobilya/index.html">Диагностика автомобиля</a><li class=""><a href="../../../services/dvigatel/index.html">Двигатель</a><li class=""><a href="../../../services/klimaticheskaya-sistema/index.html">Климатическая система</a><li class=""><a href="../../../services/kuzovnoy-remont/index.html">Кузовной ремонт</a><li class=""><a href="../../../services/podveska/index.html">Подвеска</a><li class=""><a href="../../../services/predprodazhnaya-podgotovka/index.html">Предпродажная подготовка</a><li class=""><a href="../../../services/tormoznaya-sistema/index.html">Тормозная система</a><li class=""><a href="../../../services/transmissii/index.html">Трансмиссия</a></li></ul><li class="dropdown lvl1 " id="element29"><a href="../../../cars/index.html" class="dropdown-toggle" data-toggle="dropdown">Каталог авто<span class="hidden-md hidden-lg"><i></i></span></a><ul class="dropdown-menu list-unstyled"><li class=""><a href="../../../cars/audi/index.html">Audi</a><li class=""><a href="../../../cars/hyundai/index.html">Hyundai</a><li class=""><a href="../../../cars/kia/index.html">Kia</a><li class=""><a href="../../../cars/mazda/index.html">Mazda</a><li class=""><a href="../../../cars/mitsubishi/index.html">Mitsubishi</a><li class=""><a href="../../../cars/nissan/index.html">Nissan</a><li class=""><a href="../../../cars/renault/index.html">Renault</a><li class=""><a href="../../../cars/subaru/index.html">Skoda</a><li class=""><a href="../../../cars/toyota/index.html">Toyota</a><li class=""><a href="../../../cars/Volkswagen/index.html">Volkswagen</a><li class=""><a href="../../../cars/lada/index.html">Lada</a><li class=""><a href="../../../cars/ssang_yong/index.html">SsangYong</a></li></ul><li class="dropdown lvl1 " id="element42"><a href="../../../info/index.html" class="dropdown-toggle" data-toggle="dropdown">Полезная информация<span class="hidden-md hidden-lg"><i></i></span></a><ul class="dropdown-menu list-unstyled"><li class=""><a href="../../../news/index.html">Новости</a><li class=""><a href="../../../reviews/index.html">Обзоры</a><li class=""><a href="../../../advices/index.html">Советы</a><li class="dropdown-submenu "><a href="../../../info/faq/index.html">Вопрос-ответ<span class="hidden-md hidden-lg"><i></i></span></a><ul class="dropdown-menu list-unstyled"><li class=""><a href="../../../info/faq/index.html@#addquestion">Задать вопрос</a></li></ul></li></ul><li class="dropdown lvl1 " id="element48"><a href="../../../projects/index.html" class="dropdown-toggle" data-toggle="dropdown">Проекты тюнинг-ателье<span class="hidden-md hidden-lg"><i></i></span></a><ul class="dropdown-menu list-unstyled"><li class=""><a href="../../../projects/finished/index.html">Реализованные</a><li class=""><a href="../../../projects/current/index.html">Текущие</a><li class=""><a href="../../../company/fotogallery/index.html">Фотогалерея</a></li></ul><li class="dropdown lvl1 " id="element52"><a href="../../../action/index.html" class="dropdown-toggle" data-toggle="dropdown">Акции</a><li class="dropdown lvl1 " id="element53"><a href="../../../contacts" class="dropdown-toggle" data-toggle="dropdown">Контакты<span class="hidden-md hidden-lg"><i></i></span></a><ul class="dropdown-menu list-unstyled"><li class=""><a href="../../../contacts/index.html@">Контактная информация</a><li class=""><a href="../../../contacts/nashi-avtoservicy/index.html">Наши автосервисы</a><li class=""><a href="../../../contacts/licenses/index.html">Лицензии / Сертификаты</a><li class="dropdown-submenu "><a href="../../../contacts/documents/index.html">Документы<span class="hidden-md hidden-lg"><i></i></span></a><ul class="dropdown-menu list-unstyled"><li class=""><a href="../../../contacts/documents/constituent/index.html">Учредительные документы</a><li class=""><a href="../../../contacts/documents/forusers/index.html">Пользовательская документация</a><li class=""><a href="../../../contacts/documents/tech/index.html">Техническая документация</a></li></ul></li></ul></ul>    </div>
+    <!-- Search Block --><ul class="nav navbar-nav navbar-border-bottom navbar-right list-unstyled search-bar"><li><i class="search fa search-btn lupa"></i><div class="search-open"><form action="http://autocity.redsign.ru/search/"><div class="input-group animated fadeInDown"><input type="text" name="q" class="form-control" placeholder="Поиск"><span class="input-group-btn"><button class="btn btn-primary" name="s" type="submit">Искать</button></span><div class="search-close"></div></div></form></div></li></ul><!-- End Search Block -->
+    </div>
+</div>
+                <div class="b-page has-sidebar">
+                <div class="b-page__title">
+            <div class="row">
+                <div class="col col-md-12">
+                    <div class="js-brcrtitle">
+                                            </div>
+                    <div class="js-ttl">
+                        <div class="page-header"><h1>Покупка товара</h1></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <aside class="b-page__sidebar">
+                        <div class="hidden-xs">
+            <div id="bxdynamic_IgWGop_start" style="display:none"></div><div class="side__widget">
+    <a class="fancyajaxwait clearfix" href="../recall/index.html">
+        <div class="side__widget-icon">
+            <svg class="icon-svg">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-message"></use>
+            </svg>
+        </div>
+        <div class="side__widget-text">
+            Задать вопрос        </div>
+    </a>
+</div><div id="bxdynamic_IgWGop_end" style="display:none"></div>                        <div id="bxdynamic_mmL5iT_start" style="display:none"></div><div class="side__widget">
+    <a class=" clearfix" href="../../../contacts">
+        <div class="side__widget-icon">
+            <svg class="icon-svg">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-location"></use>
+            </svg>
+        </div>
+        <div class="side__widget-text">
+            Карта проезда        </div>
+    </a>
+</div><div id="bxdynamic_mmL5iT_end" style="display:none"></div>                        <div id="bxdynamic_bHcqHw_start" style="display:none"></div><div class="side__widget">
+    <a class=" clearfix" href="../../../company/reviews/index.html">
+        <div class="side__widget-icon">
+            <svg class="icon-svg">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-pencil"></use>
+            </svg>
+        </div>
+        <div class="side__widget-text">
+            Оставить отзыв        </div>
+    </a>
+</div><div id="bxdynamic_bHcqHw_end" style="display:none"></div><div id="bxdynamic_CkmczY_start" style="display:none"></div><div class="side__widget">
+    <a class="fancyajaxwait clearfix" href="../recall/index.html">
+        <div class="side__widget-icon">
+            <svg class="icon-svg">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-device-mobile"></use>
+            </svg>
+        </div>
+        <div class="side__widget-text">
+            Заказать обратный звонок        </div>
+    </a>
+</div><div id="bxdynamic_CkmczY_end" style="display:none"></div>                        </div>
+        </aside>
+        <div class="b-page__content">
+
+<div id="comp_0835656ccc7b4a6fd048dd64a7725be3"><div id="bxdynamic_6f6OIq_start" style="display:none"></div>
+<div class="rsform">
+    
+    
+        <form action="http://autocity.redsign.ru/include/forms/ask_cars/" method="POST" class="form rsfrom__form">
+            <input type="hidden" name="sessid" id="sessid" value="" />            <input type="hidden" name="redsign_monopoly_form" value="Y">
+            <div class="rsform__all-field clearfix">
+                                    <div class="row">
+                        <div class="form-group col col-md-12 field-wrap">
+                            <label for="RS_NAME">
+                                                                    Имя                                                                                                    <span class="required"> *</span>
+                                                            </label>
+                                                            <input type="text" value="" name="RS_NAME"
+                                    class=" form-control"
+                                                                    >
+                                                    </div>
+                    </div>
+                                    <div class="row">
+                        <div class="form-group col col-md-12 field-wrap">
+                            <label for="RS_PHONE">
+                                                                    Телефон                                                                                                    <span class="required"> *</span>
+                                                            </label>
+                                                            <input type="text" value="" name="RS_PHONE"
+                                    class=" form-control"
+                                                                    >
+                                                    </div>
+                    </div>
+                                    <div class="row">
+                        <div class="form-group col col-md-12 field-wrap">
+                            <label for="RS_EMAIL">
+                                                                    Электронный адрес                                                                                            </label>
+                                                            <input type="text" value="" name="RS_EMAIL"
+                                    class=" form-control"
+                                                                    >
+                                                    </div>
+                    </div>
+                                    <div class="row">
+                        <div class="form-group col col-md-12 field-wrap">
+                            <label for="RS_EXT_FIELD_0">
+                                                                    Машина                                                                                            </label>
+                                                            <input type="text" value="[300] Hyundai Creta" name="RS_EXT_FIELD_0"
+                                    class="req-input form-control"
+                                     readonly                                >
+                                                    </div>
+                    </div>
+                                    <div class="row">
+                        <div class="form-group col col-md-12 field-wrap">
+                            <label for="RS_TEXTAREA">
+                                                                    Комментарий                                                                                            </label>
+                                                            <textarea name="RS_TEXTAREA" class="form-item form-control"></textarea>
+                                                    </div>
+                    </div>
+                            </div>
+
+                            <div class="row">
+                    <div class="form-group col col-md-12 field-wrap">
+                        <div class="captcha_wrap">
+                            <div class="rsform__captcha-label"><label for="captcha_sid">Защита от автоматических сообщений</label></div>
+                            <div class="row">
+                                <div class="rsform__captcha-input col col-md-6 col-xs-12">
+                                    <input type="hidden" name="captcha_sid" value="04e980f6670d91085dab1059b0323e3b">
+                                    <input class="form-control req-input form-item" id="captcha_" type="text" name="captcha_word" size="30" maxlength="50" value="">
+                                </div>
+                                <div class="rsform__captcha-image col col-md-6 col-xs-12">
+                                    <img src="../../../bitrix/tools/captcha.php@captcha_sid=04e980f6670d91085dab1059b0323e3b" alt="CAPTCHA">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="rsform__bottom">
+                <div class="rsform__bottom-ps"><span class='required'>*</span> - поля обязательные к заполнению</div>
+                                    <div class="rsform__license_work">
+                        Отправляя форму, я соглашаюсь на <a href="../../../license_work/index.html" target="_blank">обработку персональных данных</a>                    </div>
+                                <div class="rsform__bottom-button">
+                    <input type="hidden" name="PARAMS_HASH" value="bde21dd2b5887bb4e4185d53c4150e15">
+                    <input type="submit" class="btn btn-primary" name="submit" value="Отправить">
+                </div>
+            </div>
+    </form>
+</div>
+<script>
+    $(function() {
+        'use strict';
+        var ajaxData = BX.localStorage.get('ajax_data'),
+            key;
+
+        if(ajaxData) {
+
+            if(typeof ajaxData === 'string' || ajaxData instanceof String) {
+                ajaxData = JSON.parse(ajaxData);
+            }
+
+            for(key in ajaxData) {
+                $(".rsform [name=" + key +"]").val(ajaxData[key]);
+            }
+
+        }
+    });
+</script>
+<div id="bxdynamic_6f6OIq_end" style="display:none"></div></div>
+ </div> <!-- b-page__content -->
+    </div> <!-- b-page -->
+		<footer>
+			<div class="container">
+				<div class="row">
+                    <div class="col-sm-12 col-md-6 sm-top_footer">
+                        <div class="row">
+                			<div class="col col-sm-7 col-md-6 col-xs-6 foot-xxs-12">
+                				<div class="block_logo">
+                					<div class="footer_logo_wrap logo"><a href="../../../index.html"><svg class="icon-svg"><use xlink:href="#svg-logo_footer"></use></svg></a></div>
+            						<div class="">
+            							<span style="padding-left:90px;display:block;line-height:1;font-size:16px;">МУЛЬТИБРЕНДОВЫЙ АВТОСЕРВИС</span>            						</div>
+                				</div>
+                			</div>
+                			<div class="col col-sm-5 col-md-6 col-xs-6 foot-xxs-12">
+                				<div class="box contacts">
+                					<div class="row">
+                						<div class="col-sm-2 col-md-2 col-xs-1 foot-xxs-2">
+                							<svg class="icon-svg svg-location"><use xlink:href="#svg-location"></use></svg>
+                						</div>
+                						<div class="col-sm-10 col-md-10 col-xs-11 in roboto foot-xxs-10">
+    <div class="phone"><a href="tel:88000000000">8 800 000 00 00</a></div>
+    <div class="phone"><a href="tel:88000000000">8 800 000 00 00</a></div>
+    <div>г. Москва, ул. Егоркина, д. 125</div>
+    <div>E-mail: <a href="mailto:info@redsign.ru">info@redsign.ru</a></div>
+                						</div>
+                					</div>
+                				</div>
+                            </div>
+                        </div>
+          			</div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="row">
+        					<div class="col col-sm-7 col-md-6 col-xs-6 foot-xxs-12">
+        						
+<div class="bottom_subs">
+	<p>Подписаться на новости</p>
+	
+<form action="http://autocity.redsign.ru/company/subscribe/">
+	<div class="input-group animated fadeInDown">
+		<input type="text" 
+				 class="form-control" 
+				 name="sf_EMAIL" 
+				 placeholder="Введите ваш адрес"
+				 value="">
+		<span class="input-group-btn">
+			<button class="btn btn-primary" type="submit">Отправить</button>
+		</span>
+	</div>
+	        <div class="rsform__license_footer">
+            Отправляя форму, я соглашаюсь на <a href="../../../license_work/index.html" target="_blank">обработку персональных данных</a>        </div>
+    </form></div>
+
+        					</div>
+        					<div class="col col-sm-5 col-md-6 col-xs-6 foot-xxs-12">
+        						<div class="social_icons">
+	<div>
+		 Мы в соцсетях:
+	</div>
+ <a href="https://www.facebook.com/redsignru/" rel="nofollow" target="_blank"><img width="40" src="../../../images/facebook.png" height="40"></a>&nbsp;&nbsp;<a href="index.html@id=300#"><img width="40" src="../../../images/google-plus.png" height="40"></a>&nbsp;&nbsp;<a href="index.html@id=300#"><img width="40" src="../../../images/ok.png" height="40"></a>&nbsp;&nbsp;<a href="https://twitter.com/redsignru" rel="nofollow" target="_blank"><img width="40" src="../../../images/twitter.png" height="40"></a>&nbsp;&nbsp;<a href="https://vk.com/redsignru" rel="nofollow" target="_blank"><img width="40" src="../../../images/vk.png" height="40"></a><br>
+ 	
+</div>
+ <br>                            </div>
+                        </div>
+            		</div>
+				</div>
+			</div>
+			<div class="footer_copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col col-lg-7 col-md-8"><span class="all_rights">© Все права защищены. Информация сайта защищена законом об авторских правах.</span></div>
+						<div class="col col-lg-2 col-md-4 alright"><span id="bx-composite-banner"></span></div>
+                        						<div class="col col-lg-3 col-md-12 alright"><span class="alfa_title">Разработано в <a class="aprimary" href="http://redsign.ru/" target="_blank" rel="nofollow">АЛЬФА Системс</a></span></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	</div><!-- wrapper -->
+
+
+<div id="bxdynamic_SML3iO_start" style="display:none"></div>
+<div id="rswidget_setting">
+  <div class="rswidget_setting_body">
+    <div class="shesterenka js-widget_button" data-link="js-setting">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+        <path d="M17.599 3.738v2.598l0.8 0.207c0.905 0.234 1.768 0.597 2.566 1.081l0.715 0.434 1.86-1.86 2.262 2.262-1.888 1.888 0.407 0.708c0.451 0.785 0.788 1.635 1.002 2.527l0.196 0.817h2.744v3.199h-2.806l-0.216 0.782c-0.233 0.844-0.583 1.654-1.040 2.406l-0.434 0.716 2.036 2.035-2.262 2.262-2.064-2.064-0.707 0.407c-0.734 0.422-1.531 0.745-2.368 0.961l-0.8 0.206v2.951h-3.199v-2.951l-0.8-0.206c-0.837-0.216-1.634-0.539-2.368-0.961l-0.708-0.407-2.064 2.064-2.262-2.262 2.036-2.035-0.434-0.716c-0.457-0.753-0.807-1.562-1.040-2.406l-0.216-0.782h-2.806v-3.199h2.744l0.196-0.817c0.213-0.891 0.551-1.742 1.002-2.527l0.407-0.708-1.888-1.888 2.262-2.262 1.86 1.86 0.715-0.434c0.798-0.484 1.661-0.848 2.566-1.081l0.8-0.207v-2.598h3.199zM16 20.799c2.646 0 4.798-2.153 4.798-4.799s-2.152-4.799-4.798-4.799-4.798 2.153-4.798 4.799c0 2.646 2.152 4.799 4.798 4.799zM18.666 2.672h-5.331v2.839c-1.018 0.263-1.975 0.67-2.852 1.202l-2.022-2.022-3.769 3.77 2.065 2.065c-0.498 0.867-0.875 1.81-1.114 2.809h-2.97v5.331h3.060c0.263 0.953 0.655 1.85 1.156 2.676l-2.198 2.198 3.769 3.77 2.241-2.241c0.816 0.469 1.7 0.828 2.633 1.069v3.191h5.331v-3.191c0.933-0.241 1.817-0.6 2.633-1.069l2.241 2.241 3.769-3.77-2.198-2.198c0.501-0.826 0.893-1.723 1.156-2.676h3.060v-5.331h-2.97c-0.239-0.999-0.616-1.941-1.114-2.809l2.065-2.065-3.769-3.77-2.022 2.022c-0.877-0.532-1.834-0.939-2.852-1.202v-2.839h-0zM16 19.733c-2.062 0-3.732-1.671-3.732-3.733s1.67-3.732 3.732-3.732 3.732 1.671 3.732 3.732c0 2.062-1.67 3.733-3.732 3.733v0z"></path>
+      </svg>
+      <div class="descr">
+        <span class="settings_show">Настройки сайта</span>
+        <span class="settings_hide">Скрыть настройки</span>
+      </div>
+    </div>
+      <div class="settings rswidget_some_set js-setting clearfix" data-column="350">
+        <div class="in">
+          <div class="title">Настройки сайта</div>
+          <div class="widget_blocks setting_scroll-pane">
+            <div class="inner_widget_blocks blocks">
+             
+                                  <div class="col left">
+                                            <div class="colors border_block no_bottom_border">
+                            <div class="block_name">Цвета</div>
+                            <div class="name_block_color clearfix">
+                                                                                              <div class="js-select_color rswidget_headers">
+                                  <a href="index.html@id=300#rsmw_tab0">
+                                    <span class="border_color_widget active">
+                                      <span class="color_widget" style="background-color:#4ba82e"></span>
+                                    </span>
+                                  <br />
+                                  Основной цвет                                  </a>
+                                </div>
+                                                                                              <div class="js-select_color rswidget_headers">
+                                  <a href="index.html@id=300#rsmw_tab1">
+                                    <span class="border_color_widget ">
+                                      <span class="color_widget" style="background-color:#ffffff"></span>
+                                    </span>
+                                  <br />
+                                  Цвет текста                                  </a>
+                                </div>
+                                                                                          </div>
+                            <div class="block_with_color">
+                                                                <div class="rswidget_content show" id="rsmw_tab0" data-id_prop="RS.WIDGET_SETTING.GENCOLOR">
+                                    <div class="rswidget_tab js-color_block">
+                                      <div class="rswidget_cp rswidget_colorBlock0 clearfix">
+                                        <div id="colorpickerHolder0" class="colorpickerHolder" data-dcolor="4ba82e"></div>
+                                        <div class="colors">
+                                          <table>
+                                            <tbody>
+                                              <tr class="field r">
+                                                <td class="name">R</td><td class="val"><input readonly type="text" value="75" /></td>
+                                              </tr>
+                                              <tr class="field g">
+                                                <td class="name">G</td><td class="val"><input readonly type="text" value="168" /></td>
+                                              </tr>
+                                              <tr class="field b">
+                                                <td class="name">B</td><td class="val"><input readonly type="text" value="46" /></td>
+                                              </tr>
+                                              <tr class="field hex">
+                                                <td class="name">#</td><td class="val"><input type="text" data-js_name_prop="gencolor" data-js_val_prop="color" name="color_gencolor" value="4ba82e" /></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                                                  <div class="rswidget_content " id="rsmw_tab1" data-id_prop="RS.WIDGET_SETTING.SECONDCOLOR">
+                                    <div class="rswidget_tab js-color_block">
+                                      <div class="rswidget_cp rswidget_colorBlock1 clearfix">
+                                        <div id="colorpickerHolder1" class="colorpickerHolder" data-dcolor="ffffff"></div>
+                                        <div class="colors">
+                                          <table>
+                                            <tbody>
+                                              <tr class="field r">
+                                                <td class="name">R</td><td class="val"><input readonly type="text" value="255" /></td>
+                                              </tr>
+                                              <tr class="field g">
+                                                <td class="name">G</td><td class="val"><input readonly type="text" value="255" /></td>
+                                              </tr>
+                                              <tr class="field b">
+                                                <td class="name">B</td><td class="val"><input readonly type="text" value="255" /></td>
+                                              </tr>
+                                              <tr class="field hex">
+                                                <td class="name">#</td><td class="val"><input type="text" data-js_name_prop="secondColor" data-js_val_prop="color" name="color_secondColor" value="ffffff" /></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                                            </div>
+                            <div class="block_name">Цвет при наведении</div>
+                            <div class="rs_widget_slider_value">
+                              <span class="rs_widget_slider_value_left">темнее</span>
+                              <input type="text" data-js_name_prop="rs_darken_color" data-js_val_prop="color" value="-34">
+                              <span class="rs_widget_slider_value_right">светлее</span>
+                            </div>
+                            <input type="text" id="rs_widget_slider" name="example_name" value="" />
+                          </div>
+                                                <div class="option main_settings switch clearfix border_block">
+                          <div class="block_name">Управление блоками на главной</div>
+                          <div class="body">
+                                                          <div class="block_switch">
+                                <button type="button" data-val="features" class="rs-widget_features">
+                                  <span class="block_switch_title" data-ssw="RS.WIDGET_SETTING.FEATURES">Фичи</span>
+                                  <span class="bkcg_switch">
+                                    <span data-js_name_prop="features" class="bkcg_switch_ball checked">
+                                  </span>
+                                </span></button>
+                              </div>
+                                                          <div class="block_switch">
+                                <button type="button" data-val="advantages" class="rs-widget_advantages">
+                                  <span class="block_switch_title" data-ssw="RS.WIDGET_SETTING.ADV">Преимущества</span>
+                                  <span class="bkcg_switch">
+                                    <span data-js_name_prop="advantages" class="bkcg_switch_ball checked">
+                                  </span>
+                                </span></button>
+                              </div>
+                                                          <div class="block_switch">
+                                <button type="button" data-val="catalog" class="rs-widget_catalog">
+                                  <span class="block_switch_title" data-ssw="RS.WIDGET_SETTING.CATALOG">Каталог</span>
+                                  <span class="bkcg_switch">
+                                    <span data-js_name_prop="catalog" class="bkcg_switch_ball checked">
+                                  </span>
+                                </span></button>
+                              </div>
+                                                          <div class="block_switch">
+                                <button type="button" data-val="reviewes" class="rs-widget_reviewes">
+                                  <span class="block_switch_title" data-ssw="RS.WIDGET_SETTING.REVIEWES">Отзывы</span>
+                                  <span class="bkcg_switch">
+                                    <span data-js_name_prop="reviewes" class="bkcg_switch_ball checked">
+                                  </span>
+                                </span></button>
+                              </div>
+                                                          <div class="block_switch">
+                                <button type="button" data-val="gallery" class="rs-widget_gallery">
+                                  <span class="block_switch_title" data-ssw="RS.WIDGET_SETTING.GALLERY">Галерея</span>
+                                  <span class="bkcg_switch">
+                                    <span data-js_name_prop="gallery" class="bkcg_switch_ball checked">
+                                  </span>
+                                </span></button>
+                              </div>
+                                                          <div class="block_switch">
+                                <button type="button" data-val="news" class="rs-widget_news">
+                                  <span class="block_switch_title" data-ssw="RS.WIDGET_SETTING.NEWS">Новости</span>
+                                  <span class="bkcg_switch">
+                                    <span data-js_name_prop="news" class="bkcg_switch_ball checked">
+                                  </span>
+                                </span></button>
+                              </div>
+                                                          <div class="block_switch">
+                                <button type="button" data-val="brands" class="rs-widget_brands">
+                                  <span class="block_switch_title" data-ssw="RS.WIDGET_SETTING.BRANDS">Бренды</span>
+                                  <span class="bkcg_switch">
+                                    <span data-js_name_prop="brands" class="bkcg_switch_ball checked">
+                                  </span>
+                                </span></button>
+                              </div>
+                                                          <div class="block_switch">
+                                <button type="button" data-val="specialist" class="rs-widget_specialist">
+                                  <span class="block_switch_title" data-ssw="RS.WIDGET_SETTING.SPEC">Специалисты</span>
+                                  <span class="bkcg_switch">
+                                    <span data-js_name_prop="specialist" class="bkcg_switch_ball checked">
+                                  </span>
+                                </span></button>
+                              </div>
+                                                          <div class="block_switch">
+                                <button type="button" data-val="model" class="rs-widget_model">
+                                  <span class="block_switch_title" data-ssw="RS.WIDGET_SETTING.MODEL">Модели</span>
+                                  <span class="bkcg_switch">
+                                    <span data-js_name_prop="model" class="bkcg_switch_ball checked">
+                                  </span>
+                                </span></button>
+                              </div>
+                                                          <div class="block_switch">
+                                <button type="button" data-val="map" class="rs-widget_map">
+                                  <span class="block_switch_title" data-ssw="RS.WIDGET_SETTING.MAP">Карта</span>
+                                  <span class="bkcg_switch">
+                                    <span data-js_name_prop="map" class="bkcg_switch_ball checked">
+                                  </span>
+                                </span></button>
+                              </div>
+                                                      </div>
+                        </div>
+
+                                                              <div class="border_block">
+                      <div class="save_button clearfix"><i class="save_button_pic"></i>Сохранить настройки<i class="icon_load"></i></div>
+                      <div class="after_save_button clearfix after_save_modules">
+                        <div class="after_save_button_default">Настройки по умолчанию</div>
+                        <a href="index.html@id=300" target="_blank"><div class="after_save_button_buy"></div></a>
+                      </div>
+                    </div>
+                                    </div>
+                                
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div id="rswidget_style"></div><script>
+var styleColor = "",
+  styleSecondColor = "",
+  rswidget_style_color = ".text-primary,\n.btn-link,\n.btn-primary .badge,\n.pagination > li > a,.pagination > li > span,\n.list-group-item.active > .badge,.nav-pills > .active > a > .badge,\n.panel-primary > .panel-heading .badge,\nh1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover,\nh4, .h4, h6, .h6,\nhtml .aprimary,\nhtml a.aprimary,\nul.nav-sidebar li.active > a,\n.service-specialist .service-specialist__phone a:before,\n.service-specialist .service-specialist__ask a:before,\nbody .banner_title_whitewrap,\n.banner_desc_whitewrap\n{\n  color: #FIRST_COLOR#;\n}\n.bg-primary,\n.btn-primary,\nfieldset[disabled] .btn-primary,\nfieldset[disabled] .btn-primary:hover,\nfieldset[disabled] .btn-primary:focus,\nfieldset[disabled] .btn-primary.focus,\nfieldset[disabled] .btn-primary:active,\nfieldset[disabled] .btn-primary.active,\n.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,\n.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus,\n.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,\n.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus,\n.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,.pagination > .active > span,.pagination > .active > span:hover,.pagination > .active > span:focus,\n.label-primary,\n.progress-bar,\n.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus,\n.panel-primary > .panel-heading,\n.fancybox-title,\n.b-page:not(.has-sidebar) .b-expert .b-expert__left:before,\nbody .rs-banners-container .owl-theme .owl-dots .owl-dot.active span,\nbody .rs-banners-container .owl-theme .owl-dots .owl-dot:hover span,\nbody .owl .owl-nav div:hover, .owl_banners .owl-nav div:hover,\nbody .owl_banners2 .owl-nav div:hover, .owlslider .owl-nav div:hover\n{\n  background-color: #FIRST_COLOR#;\n}\n.btn-default,\nfieldset[disabled] .btn-default,\nfieldset[disabled] .btn-default:hover,\nfieldset[disabled] .btn-default:focus,\nfieldset[disabled] .btn-default.focus,\nfieldset[disabled] .btn-default:active,\nfieldset[disabled] .btn-default.active,\n.btn-primary,\n.btn-default,\nfieldset[disabled] .btn-primary,\nfieldset[disabled] .btn-primary:hover,\nfieldset[disabled] .btn-primary:focus,\nfieldset[disabled] .btn-primary.focus,\nfieldset[disabled] .btn-primary:active,\nfieldset[disabled] .btn-primary.active,\n.nav .open > a, .nav .open > a:hover, .nav .open > a:focus,\n.cars-detail__head\n{\n  border-color: #FIRST_COLOR#;\n}\n.b-page.has-sidebar .b-expert .b-expert__left {background: #FIRST_COLOR#;}\n.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {border: 1px solid #FIRST_COLOR#;}\n.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,.pagination > .active > span,.pagination > .active > span:hover,.pagination > .active > span:focus {border-color: #FIRST_COLOR#;}\na.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {border-color: #FIRST_COLOR#; }\n.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {border-color: #FIRST_COLOR#; }\n.panel-primary {border-color: #FIRST_COLOR#; }\n.panel-primary > .panel-heading {border-color: #FIRST_COLOR#; }\n.panel-primary > .panel-heading + .panel-collapse > .panel-body {border-top-color: #FIRST_COLOR#; }\n.panel-primary > .panel-footer + .panel-collapse > .panel-body {border-bottom-color: #FIRST_COLOR#; }\n.blockquote-leftline {border-left-color: #FIRST_COLOR#; }\nul > li:before, ol > li:before {color: #FIRST_COLOR#; }\n.mainform .inner-wrap {border-bottom: 2px solid #FIRST_COLOR#; }\n.wrapper input[type=\"radio\"]:checked + label:before,.wrapper input[type=\"radio\"]:checked + .bx_filter_param_text:before,.fancybox-inner input[type=\"radio\"]:checked + label:before,.fancybox-inner input[type=\"radio\"]:checked + .bx_filter_param_text:before {color: #FIRST_COLOR#;}\n.wrapper input[type=\"checkbox\"]:checked + label:after,.wrapper input[type=\"checkbox\"]:checked + .bx_filter_param_text:after,.wrapper .js-compare.checked:after,.fancybox-inner input[type=\"checkbox\"]:checked + label:after,.fancybox-inner input[type=\"checkbox\"]:checked + .bx_filter_param_text:after,.fancybox-inner .js-compare.checked:after { color: #FIRST_COLOR#;}\n.dropdown-menu {border-bottom: 2px solid #FIRST_COLOR#;}\n.price .svg-wallet {fill: #FIRST_COLOR#; }\n.b-expert .b-expert__btn:focus, .b-expert .b-expert__btn:hover {border-color: #FIRST_COLOR#;background: #FIRST_COLOR#; }\n.b-page:not(.has-sidebar) .b-expert .b-expert__left {    background: #FIRST_COLOR#;}\n@media (min-width: 768px) {\n  .b-page.has-sidebar .b-detail-subs .b-detail-subs__left {background: #FIRST_COLOR#;}\n  .b-page.has-sidebar .b-expert .b-expert__left {background: #FIRST_COLOR#;}\n  .b-page.has-sidebar .b-detail-subs .b-detail-subs__left:before {background-color: #FIRST_COLOR#; }\n  .b-page.has-sidebar .b-expert .b-expert__left:before {background-color: #FIRST_COLOR#;}\n}\n@media (min-width: 480px) and (max-width: 767px) {\n  .b-page.has-sidebar .b-expert .b-expert__left {background: #FIRST_COLOR#;}\n  .b-page.has-sidebar .b-expert .b-expert__left:before {background-color: #FIRST_COLOR#; }\n}\n.service-detail .service-detail__head { border-top: 2px solid #FIRST_COLOR#;border-bottom: 2px solid #FIRST_COLOR#;}\n@media (min-width: 992px) {\n  .service-detail .service-detail__head-preview:after { border-top: 30px solid #FIRST_COLOR#;}\n}\n.service-prop .service-prop__icon .icon-svg {fill: #FIRST_COLOR#; }\n.service-specialist .service-specialist__name {color: #FIRST_COLOR#;}\n.service-specialist .service-specialist__ask a:before { color: #FIRST_COLOR#;}\n.b-service-advantage .b-service-advantage__title {color: #FIRST_COLOR#;}\n.mini_banner__info {background-color: #FIRST_COLOR#; }\n.mainform .inner-wrap {border-bottom: 2px solid #FIRST_COLOR#; }\n.map-sidebar__message {background-color: #FIRST_COLOR#;}\n.map-sidebar__message-inner:after {border: 14px solid #FIRST_COLOR#;border-right: 17px solid transparent;border-bottom: 12px solid transparent;}\n.review__message:before, .review__message:after {color: #FIRST_COLOR#; }\n.review__name:before {background-color: #FIRST_COLOR#;}\n.b-gallery-item.is-full .b-gallery-item__info {background: #FIRST_COLOR#;}\n.b-backshare .b-backshare__icon {fill: #FIRST_COLOR#; }\n.gmap-pointer { background-color: #FIRST_COLOR#; }\n.gmap-pointer:after { border: 16px solid #FIRST_COLOR#;border-right: 19px solid transparent;border-bottom: 14px solid transparent;}\n.b-detail-subs .b-detail-subs__btn:hover { border-color: #FIRST_COLOR#; background: #FIRST_COLOR#; }\n@media (min-width: 480px) {\n  .b-page:not(.has-sidebar) .b-detail-subs .b-detail-subs__left {background: #FIRST_COLOR#;}\n  .b-page:not(.has-sidebar) .b-detail-subs .b-detail-subs__left:before {background-color: #FIRST_COLOR#; }\n  .b-page:not(.has-sidebar) .b-expert .b-expert__left:before {background-color: #FIRST_COLOR#;}\n}\n@media (min-width: 480px) and (max-width: 767px) {\n  .b-page.has-sidebar .b-detail-subs .b-detail-subs__left { background: #FIRST_COLOR#;}\n  .b-page.has-sidebar .b-detail-subs .b-detail-subs__left:before {background-color: #FIRST_COLOR#; }\n\n}\n.b-g-item .b-g-item__data {background: #FIRST_COLOR#;}\n.mainbanners_items {border-bottom: 2px solid #FIRST_COLOR#;}\n.mainbanners .owl-carousel .owl-dots .owl-dot span:hover {background: #FIRST_COLOR#; }\n.backshare .detailback:hover i {color: #FIRST_COLOR#; }\n.mainform .rating .rating-icon.hover {color: #FIRST_COLOR#; }\n.smartfilter .bx_ui_slider_pricebar_V { background-color: #FIRST_COLOR#; }\n.smartfilter .bx_ui_slider_handle:hover { background-color: #FIRST_COLOR#; }\n.smartfilter .bx_filter_popup_result:hover {border-color: #FIRST_COLOR#; }\n.smartfilter .bx_filter_popup_result:hover .arrow { border-right-color: #FIRST_COLOR#; }\n.bx_filter_param_label.active .bx_filter_param_btn,.bx_filter_param_label:hover .bx_filter_param_btn { border-color: #FIRST_COLOR#; }\nbody .popup-window.smartFilterSelectbox .popup-window-content ul {border-bottom: 2px solid #FIRST_COLOR#;}\n@media (min-width: 992px) {\n  .smartfilter.ftype2 ul .bx_filter_prop > .body {border-bottom: 2px solid #FIRST_COLOR#;}\n}\n.catalogsorter .template a:hover, .catalogsorter .template a.selected { color: #FIRST_COLOR#; }\n.b-header .b-header__contacts .icon-svg, .b-header .b-header__recall .icon-svg {fill:#FIRST_COLOR#;}\n.b-mmenu {background: #FIRST_COLOR#;}\n.b-mmenu .b-mmenu__toggle {background: #FIRST_COLOR#;}\n.b-mmenu.navbar-default .dropdown-menu > li > a,.b-mmenu.navbar-default .navbar-nav > li > a { background-color: #FIRST_COLOR#}\n @media (min-width: 992px) {\n  .b-mmenu .search-bar .search-open {\n    border-bottom: 3px solid #FIRST_COLOR#;\n  }\n}\nfooter {border-color: #FIRST_COLOR#;}\nfooter .svg-location,\n.flpl,\n.feature__icon,\n.feature__icon:hover,\n.side__widget a:hover svg,\n.cars-price__icon .svg-icon,\n.b-fresh-item-price__icon .svg-icon {\n  fill: #FIRST_COLOR#;\n}\n.side__widget-text {\n  color:#FIRST_COLOR#;\n}\n\n\n\n\n\na.text-primary:hover {color: #FIRST_COLOR_DARKEN#; }\na.bg-primary:hover { background-color: #FIRST_COLOR_DARKEN#; }\n.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active,\n  .open > .btn-default.dropdown-toggle {background-color: #e6e6e6;border-color: #FIRST_COLOR_DARKEN#; }\n.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active,\n.open > .btn-primary.dropdown-toggle{background-color: #FIRST_COLOR_DARKEN#;border-color: #FIRST_COLOR_DARKEN#; }\n.btn-link:hover, .btn-link:focus{color: #FIRST_COLOR_DARKEN#;}\n.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {background-color: #FIRST_COLOR_DARKEN#; }\n.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {background-color: #FIRST_COLOR_DARKEN#;}\n.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {background-color: #FIRST_COLOR_DARKEN#; }\n.pagination > li > a:hover, .pagination > li > a:focus,.pagination > li > span:hover,.pagination > li > span:focus {color: #FIRST_COLOR_DARKEN#;}\n.label-primary[href]:hover, .label-primary[href]:focus {background-color: #FIRST_COLOR_DARKEN#; }\n.list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {color: #FIRST_COLOR_DARKEN#; }\nhtml .btn-default:hover, html .btn-default:focus, html .btn-default.focus, html .btn-default:active, html .btn-default.active,.open > html .btn-default.dropdown-toggle {background-color: #FIRST_COLOR_DARKEN#;border-color: #FIRST_COLOR_DARKEN#; }\n.mini_banner__link:hover .mini_banner__info {background-color: #FIRST_COLOR_DARKEN#; }\n.b-gallery-item.is-full:hover .b-gallery-item__info {background: #FIRST_COLOR_DARKEN#; }\n.b-backshare .b-backshare__backlink:hover .b-backshare__icon {fill: #FIRST_COLOR_DARKEN#; }\n.mainbanners .owl-carousel .owl-dots .owl-dot.active span {background: #FIRST_COLOR_DARKEN#; }\n.b-mmenu .b-mmenu__toggle:focus,\n  .b-mmenu .b-mmenu__toggle:hover,\n  .b-mmenu.navbar-default .navbar-nav .dropdown-menu > li > a:hover,\n  .b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,\n  .b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,\n  .b-mmenu.navbar-default .navbar-nav > .open > a:focus,\n  .b-mmenu.navbar-default .navbar-nav > .open > a:hover,\n  .b-mmenu.navbar-default .navbar-nav li:hover > a {   background: #FIRST_COLOR_DARKEN#;}\n\n.b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > .active > a,\n    .b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,\n    .b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,\n    .b-mmenu.navbar-default .navbar-nav > .open > a:focus,\n    .b-mmenu.navbar-default .navbar-nav > .open > a:hover {background: #FIRST_COLOR_DARKEN#;}\n\n\n\n\n\n\n.map-sidebar__message,\n.b-mmenu .b-mmenu__toggle,\n.b-mmenu.navbar-default .dropdown-menu > li > a,\n.b-mmenu.navbar-default .navbar-nav > li > a ,\n.b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > li > a,\n.b-mmenu .b-mmenu__toggle:focus,\n.b-mmenu .b-mmenu__toggle:hover,\n.b-mmenu.navbar-default .navbar-nav .dropdown-menu > li > a:hover,\n.b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,\n.b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,\n.b-mmenu.navbar-default .navbar-nav > .open > a:focus,\n.b-mmenu.navbar-default .navbar-nav > .open > a:hover,\n.b-mmenu.navbar-default .navbar-nav li:hover > a,\n.b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > .active > a,\n.b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,\n.b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,\n.b-mmenu.navbar-default .navbar-nav > .open > a:focus,\n.b-mmenu.navbar-default .navbar-nav > .open > a:hover,\n.btn-primary,\n.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active,\n.open > .btn-primary.dropdown-toggle,\n.mini_banner__info,\n.mini_banner__link:hover .mini_banner__info,\nhtml .btn-default:hover,\nhtml .btn-default:focus,\nhtml .btn-default.focus,\nhtml .btn-default:active,\nhtml .btn-default.active,\n.open > html .btn-default.dropdown-toggle,\n.owl .owl-nav div:hover,\n.owl_banners .owl-nav div:hover,\n.owl_banners2 .owl-nav div:hover,\n.owlslider .owl-nav div:hover,\n.b-gallery-item.is-full .b-gallery-item__info,\n.label,\n.gmap-pointer__body,\n.gmap-pointer__body a,\n.fancybox-title,\n.fancybox-close,\n.b-mmenu .search,\n.b-g-item .b-g-item__data\n{\n  color: #SECOND_COLOR#;\n}\n.b-mmenu .b-mmenu__toggle:hover,\n  .b-mmenu.navbar-default .navbar-nav .dropdown-menu > li > a:hover,\n  .b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,\n  .b-mmenu.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,\n  .b-mmenu.navbar-default .navbar-nav > .open > a:focus,\n  .b-mmenu.navbar-default .navbar-nav > .open > a:hover,\n  .b-mmenu.navbar-default .navbar-nav li:hover > a {\n    color:#SECOND_COLOR#;\n  }\n.map-sidebar .svg-location,\n.gmap-pointer__icon .svg-location {fill: #SECOND_COLOR#;}\n.b-mmenu .icon-toggle .icon-bar,.btn-primary .badge  {background-color: #SECOND_COLOR#;}\n.b-g-item .b-g-item__preview {border-top-color:#SECOND_COLOR#;}\nbody .cars-detail__dashed:after { border-top-color: #FIRST_COLOR#; }";
+</script><div id="bxdynamic_SML3iO_end" style="display:none"></div><script>
+    var template_path = '/bitrix/templates/autocity_default';
+    $('#svg-icons').setHtmlByUrl({url:template_path+'/assets/img/icons.svg?1'});
+</script>
+</body>
+</html>
+<!--b6393131aade85cf032032aa7f261104-->

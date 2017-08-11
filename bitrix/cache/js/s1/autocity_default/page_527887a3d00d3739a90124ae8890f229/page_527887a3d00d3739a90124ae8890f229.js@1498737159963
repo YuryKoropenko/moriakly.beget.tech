@@ -1,0 +1,5 @@
+
+; /* Start:"a:4:{s:4:"full";s:94:"/bitrix/templates/autocity_default/components/bitrix/news.list/faq/script.min.js?1498465900582";s:6:"source";s:76:"/bitrix/templates/autocity_default/components/bitrix/news.list/faq/script.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
+$(document).ready(function(){$(document).on("click",".faq .filter .btn",function(){var a=$(this).data("filter");$(".faq .filter .btn").addClass("btn-default").removeClass("btn-primary"),$(this).addClass("btn-primary").removeClass("btn-default"),$(".faq").find(".panel-group .item .panel-heading").find("a").addClass("collapsed"),$(".faq").find(".panel-group .item .panel-body").parent().removeClass("in"),""==a?$(".faq").find(".panel-group").find(".item").show():($(".faq").find(".panel-group").find(".item").hide(),$(".faq").find(".panel-group").find(".item.filter"+a).show())})});
+/* End */
+;; /* /bitrix/templates/autocity_default/components/bitrix/news.list/faq/script.min.js?1498465900582*/
